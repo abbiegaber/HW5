@@ -1,0 +1,51 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 103px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <link href="CSS/StyleSheet.css" rel="stylesheet" type="text/css" />
+
+    <div>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        <table class="style1">
+            <tr>
+                <td class="style2">
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+        </asp:SiteMapPath>
+        <br />
+                    <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                    <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1">
+                    </asp:Menu>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+           
+        </asp:ContentPlaceHolder>
+        <br />
+        <br />
+    </div>
+   
+    </form>
+</body>
+</html>
+

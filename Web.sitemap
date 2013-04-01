@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="Default.aspx" title="Homepage"  description="Homepage" >
+      <siteMapNode url="ShelterGridview.aspx" title="View All"  description="View All" />
+      <siteMapNode url ="Administrator/ShelterGridView.aspx" title ="Administrator" description="Administrator" />
+    </siteMapNode>
+</siteMap>
